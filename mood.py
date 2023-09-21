@@ -65,7 +65,7 @@ def main():
     # classify_container = st.container()
 
     # Load the saved model using pickle
-    loaded_model = joblib.load(file)
+    loaded_model = joblib.load('best_model1.pkl')
 
     # Create two columns for the buttons
     col1, col2 = st.columns(2)
