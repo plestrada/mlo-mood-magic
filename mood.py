@@ -120,7 +120,7 @@ def main():
 
     if result_text == 'Predicted Mood: HAPPY':
         emotions = f"""
-            <img src="https://cdn.pixabay.com/photo/2020/12/27/20/24/smile-5865208_1280.png" >
+            <img src="data:image/png;base64,{get_img("images/happy.png")}" width="300" height="300">
         """
         st.markdown(emotions, unsafe_allow_html=True)
 
