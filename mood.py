@@ -118,5 +118,11 @@ def main():
         """
         st.markdown(emotions, unsafe_allow_html=True)
 
+    if result_text == 'Predicted Mood: HAPPY':
+        emotions = f"""
+            <img src="data:image/png;base64,{get_img("images/happy.png")}" >
+        """
+        st.markdown(emotions, unsafe_allow_html=True)
+
 if __name__ == '__main__':
     main()
