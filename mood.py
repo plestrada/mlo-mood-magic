@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 from bs4 import BeautifulSoup
 import re
-import pickle
+import joblib
 import base64
 
 def get_img(file):
@@ -65,9 +65,7 @@ def main():
     # classify_container = st.container()
 
     # Load the saved model using pickle
-    with open('best_model1.pkl', 'rb') as file:
-        loaded_model = pickle.load(file)
-
+    loaded_model = joblib.load(file)
 
     # Create two columns for the buttons
     col1, col2 = st.columns(2)
