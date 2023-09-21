@@ -150,7 +150,7 @@ def main():
 
     if result_text == 'Predicted Mood: DONT_CARE':
         emotions = f"""
-            <img src="data:image/png;base64,{get_img("images/dont_care.jpeg")}" width="300" height="300">
+            <img src="data:image/png;base64,{get_img("images/dont_care.jpeg")}" width="600" height="300">
         """
         st.markdown(emotions, unsafe_allow_html=True)
 
