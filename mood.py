@@ -123,6 +123,37 @@ def main():
             <img src="data:image/png;base64,{get_img("images/happy.png")}" width="300" height="300">
         """
         st.markdown(emotions, unsafe_allow_html=True)
+            
+    if result_text == 'Predicted Mood: AFRAID':
+        emotions = f"""
+            <img src="data:image/png;base64,{get_img("images/afraid.jpeg")}" width="300" height="300">
+        """
+        st.markdown(emotions, unsafe_allow_html=True)
+
+    if result_text == 'Predicted Mood: AMUSED':
+        emotions = f"""
+            <img src="data:image/png;base64,{get_img("images/amused.jpeg")}" width="300" height="300">
+        """
+        st.markdown(emotions, unsafe_allow_html=True)
+
+    if result_text == 'Predicted Mood: ANNOYED':
+        emotions = f"""
+            <img src="data:image/png;base64,{get_img("images/annoyed.png")}" width="300" height="300">
+        """
+        st.markdown(emotions, unsafe_allow_html=True)
+
+    if result_text == 'Predicted Mood: SAD':
+        emotions = f"""
+            <img src="data:image/png;base64,{get_img("images/sad.png")}" width="300" height="300">
+        """
+        st.markdown(emotions, unsafe_allow_html=True)
+
+    if result_text == 'Predicted Mood: DONT_CARE':
+        emotions = f"""
+            <img src="data:image/png;base64,{get_img("images/dont_care.jpeg")}" width="300" height="300">
+        """
+        st.markdown(emotions, unsafe_allow_html=True)
+
 
 if __name__ == '__main__':
     main()
